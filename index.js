@@ -5,9 +5,7 @@ import connectDB from "./db/connectDB.js";
 const app = express();
 
 const port = process.env.PORT || 8000;
-const DATABASE_URL =
-  process.env.DATABASE_URL ||
-  "mongodb+srv://<username>:<password>@<project_name>.tnhgrhu.mongodb.net/<database>?retryWrites=true&w=majority";
+const DATABASE_URL = process.env.DATABASE_URL || "mongodb+srv://<username>:<password>@<project_name>.tnhgrhu.mongodb.net/<database>?retryWrites=true&w=majority";
 
 connectDB(DATABASE_URL);
 
